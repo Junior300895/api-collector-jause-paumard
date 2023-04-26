@@ -59,7 +59,7 @@ public class Test {
 		employes.add(new Employe("e6", 168, 2850));
 
 		Double total = employes.stream().mapToDouble(e -> e.getSalaire()).sum();
-		System.out.println("total salaire = " + total + "\n");
+		System.out.println("\ntotal salaire = " + total + "\n");
 
 		/** Method FindFirst */
 		Optional<Employe> uneGrandePersonne = employes.stream().filter(p -> p.getTaille() >= 100).findFirst();
@@ -72,11 +72,11 @@ public class Test {
 		/** TEST 3 */
 //		int[] tab = {3, 4, 5};
 //		int[] tab = {-12, -10, -3};
-//		int[] tab = {-12, -10, 3, 4};
+		// int[] tab = {-12, -10, 3, 4};
 //		int[] tab = {-12, -12};
-		int[] tab = {12, 12};
+		int[] tab = {-12, 12};
 		
-		System.out.println("Valeur plus proche de 0 : " + value(tab));
+		System.out.println("\nValeur plus proche de 0 : " + value(tab));
 		
 		
 	}
